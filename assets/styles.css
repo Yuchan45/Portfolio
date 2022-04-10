@@ -369,35 +369,36 @@ body {
     width: 7vw;
 }
 
-.footer {
+.contact-section {
+    margin-top: 30px;
     width: 100vw;
-    height: 90vh;
-    background-color: orange;
+    height: auto;
+    /* background-color: orange; */
     display: flex;
     color: #ffffffeb;
 }
 
-.footer .contact-container {
+.contact-section .contact-container {
     margin: auto;
-    height: 600px;
+    height: auto;
     width: 100vw;
     max-width: 60vw;
-    background-color: #f6ad55;
+    /* background-color: #f6ad55; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .contact-container .contact-info {
-    background-color: red;
+    /* background-color: red; */
     width: 40%;
     height: 100%; /*auto*/
     text-align: center;
 }
 
 .contact-container .contact-form-container {
-    background-color: blue;
-    width: 50%;
+    /* background-color: blue; */
+    width: 60%;
     height: 100%; /*auto*/
     text-align: center;
 }
@@ -407,7 +408,7 @@ body {
     text-align: left;
     width: 85%;
     height: 50%;
-    background-color: rgb(212, 160, 45);
+    /* background-color: rgb(212, 160, 45); */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -444,6 +445,10 @@ body {
     padding: 10px;
 }
 
+.contact-text .ct-list li p {
+    font-size: 16px;
+}
+
 .social-media {
     margin: auto;
     width: 85%;
@@ -462,8 +467,12 @@ body {
 
 }
 .social-media .social-flex {
-    width: 80%;
+    width: 72%;
     margin: auto;
+}
+
+.social-media .social-flex h1 {
+    margin: 15px auto;
 }
 
 .social-ul {
@@ -476,8 +485,8 @@ body {
     display: flex; /*Agregado*/
     position: relative;
     list-style: none;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     margin: auto;
     margin-top: 80px;
     transition: all 0.5s ease-in-out;
@@ -495,7 +504,7 @@ body {
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    font-size: 30px;
+    font-size: 15px;
     color: white;
     transition: all 0.5s ease-in-out;
     background-color: transparent !important;  
@@ -508,19 +517,19 @@ body {
 
 .boxExpand span:nth-child(5){
     opacity: 1;
-    transform: translate(40px, -40px);
+    transform: translate(20px, -20px);
 }
 .boxExpand span:nth-child(4){
     opacity: 0.8;
-    transform: translate(30px, -30px);
+    transform: translate(15px, -15px);
 }
 .boxExpand span:nth-child(3){
     opacity: 0.6;
-    transform: translate(20px, -20px);
+    transform: translate(10px, -10px);
 }
 .boxExpand span:nth-child(2){
     opacity: 0.4;
-    transform: translate(10px, -10px);
+    transform: translate(5px, -5px);
 }
 .boxExpand span:nth-child(1){
     opacity: 0.2;
@@ -557,7 +566,86 @@ body {
     box-shadow: 0 0 0.1em #4e73cb;
 }
 
-.contact-form {
-    width: 80%;
+
+.contact-form-container {
+
+}
+
+.contact-form-container .contact-form {
+    width: 85%;
     margin: auto;
+}
+
+.contact-form h1 {
+    margin: 0 auto 25px auto;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.contact-form p {
+    text-align: justify;
+    /* text-indent: 1em; */
+    line-height: 1.6;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.form-group .input-style {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    line-height: 1.42857143;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    padding: 10px!important;
+    background: transparent!important;
+    border-color: #444444!important;
+    color: #929292!important;
+    /* font-size: 1.2em!important; */
+    font-size: 16px;
+    height: auto!important;
+}
+.contact-form .submit-btn {
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px!important;
+    border-radius: 2px!important;
+    background-color: #0a99ff!important;
+    border-color: #198bdc!important;
+    font-weight: bold!important;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    min-height: 70px;
+    padding: 15px;
+    text-align: center;
+}
+
+.footer .credits {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.footer .credits a {
+    padding: 10px;
+    display: inline-block;
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
+    color: #7d88a4;
+    font-size: 15px;
+    line-height: 1;
+
 }
