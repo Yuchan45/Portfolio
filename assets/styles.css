@@ -24,17 +24,18 @@ body {
 .nav-bar-container {
     margin: auto;
     height: 50px;
-    width: 100%;
-    max-width: 70%;
+    width: 70%;
+    max-width: 1000px;
 
     text-align: center;
     display: flex;
     flex-wrap: nowrap;
-    justify-content: center
+    /* justify-content: center; */
+    justify-content: space-between;
 }
 .nav-bar-container > div {
     padding: 0 30px 0 30px;
-    margin: auto;
+    margin: auto 0;
 }
 
 .left-section {
@@ -72,7 +73,7 @@ body {
     color: #ffffffeb;
     position: relative;
     margin: 0 25px 0 25px;
-    padding: 5px 5px 5px 5px;
+    padding: 5px 0px 5px 0px;
 }
 
 .center-section > a {
@@ -88,7 +89,8 @@ body {
     height: 2px;
     border-radius: 2px;
     background-color: #3a7a9c;
-    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    /* background: linear-gradient(to right, #8e2de2, #4a00e0); */
+    background: linear-gradient(to right, #d856a6, #4c5799);
     bottom: 2px;
     left: 0;
     transform-origin: right;
@@ -407,7 +409,8 @@ body {
 .skills-span {
     margin: auto;
     /* font-size: 20vw; */
-    font-size: 380px;
+    /* font-size: 380px; */
+    font-size: 22em;
     font-weight: bolder;
     letter-spacing: -5px;
     vertical-align: top;
@@ -541,13 +544,6 @@ body {
     justify-content: center;
 }
 
-.social-media .sm-container {
-
-}
-
-.sm-container > h1 {
-
-}
 .social-media .social-flex {
     width: 72%;
     margin: auto;
@@ -646,11 +642,6 @@ body {
 }
 .social-ul li:nth-child(4) span {
     box-shadow: 0 0 0.1em #4e73cb;
-}
-
-
-.contact-form-container {
-
 }
 
 .contact-form-container .contact-form {
@@ -899,3 +890,35 @@ body {
     backdrop-filter: blur(0px);
     filter: none;
 }
+
+.inverted-content{
+    text-align: right !important;
+    grid-row-start: 1 !important;
+    grid-row-end: -1 !important;
+    grid-column-start: 7 !important;
+    grid-column-end: -1 !important;
+}
+
+.inverted-image{
+    grid-row-start: 1 !important;
+    grid-row-end: -1 !important;
+    grid-column-start: 1 !important;
+    grid-column-end: 8 !important;
+}
+
+.image-one {
+    background-image: url(./images/projects/analizador-de-codigo-python.png) !important;
+}
+
+.inverted-tech-list {
+    justify-content: flex-end !important;
+}
+
+.inverted-tech-list li {
+    margin: 0px 0px 5px 20px;
+}
+
+.inverted-project-links {
+    justify-content: flex-end !important;
+}
+
