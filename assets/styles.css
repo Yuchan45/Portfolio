@@ -555,13 +555,14 @@ html {
 }
 
 .project-content .project-description {
-    box-shadow: 0 10px 30px -15px var(--navy-shadow);
+    box-shadow: 0 10px 30px -15px #020c1bb3;
     margin: 20px auto;
     position: relative;
     z-index: 2;
     padding: 25px;
     border-radius: 4px;
-    background-color: #15223a;
+    background-color: #1111117d;
+    backdrop-filter: blur(10px);
 }
 
 .project-content .project-description > p {
@@ -627,22 +628,19 @@ html {
 }
 
 .project-image > a .pr-image::after {
-    content: '';
+    content: "";
     display: block;
     width: 100%;
     height: 100%;
-    /* background-color: #0a192f; */
-    background-color: #222226;
-    mix-blend-mode: screen;
-
-    backdrop-filter: blur(2px);
-    transition: all 0.3s linear;
+    background: linear-gradient(45deg, #ff63c3, #63fbd7);
+    opacity: 0.2;
+    mix-blend-mode: color;
+    transition: all .5s ease;
 }
 
-.project-image > a .pr-image:hover::after {
-    background: transparent;
-    backdrop-filter: blur(0px);
+a .pr-image:hover::after {
     filter: none;
+    opacity: 0;
 }
 
 .inverted-content{
