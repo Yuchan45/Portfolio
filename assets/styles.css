@@ -746,6 +746,18 @@ a .pr-image:hover::after {
 
 }
 
+/* .ct-list .location {
+    color: orange;
+}
+
+.ct-list .whatsapp {
+    color: green;
+}
+
+.ct-list .email {
+    color: red;
+} */
+
 .contact-text .ct-list li{
     display: flex;
     align-content: space-between;

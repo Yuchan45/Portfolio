@@ -18,3 +18,15 @@ $(document).ready(function(){
     
 });
 
+document.getElementById("social-git").onclick = function () {
+    window.open("https://www.github.com", "_blank");
+};
+document.getElementById("social-ig").onclick = function () {
+    window.open("https://www.instagram.com", "_blank");
+};
+document.getElementById("social-li").onclick = function () {
+    window.open("https://www.linkedin.com", "_blank");
+};
+document.getElementById("social-fb").onclick = function () {
+    window.open("https://www.facebook.com", "_blank");
+};
