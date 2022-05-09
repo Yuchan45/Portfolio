@@ -51,6 +51,13 @@ const fieldValidation = (expresion, input, campo) => {
         document.querySelector(`#i__${campo}`).classList.add('fa-circle-xmark');
         document.querySelector(`#i__${campo}`).classList.remove('fa-circle-check');
         document.querySelector(`#group__${campo} .formulario__input-error`).classList.add('formulario__input-error-activo');
+
+        setTimeout(() => {
+            if (input.value == '') {
+                document.getElementById(`group__${campo}`).classList.remove('formulario__grupo-incorrecto');
+                document.querySelector(`#group__${campo} .formulario__input-error`).classList.remove('formulario__input-error-activo');
+            }
+		}, 3000);
     }
 }
 

@@ -12,6 +12,11 @@ body {
     text-align: center;
     overflow-x: hidden;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
 .navigation-bar {
     width: 100%;
     position: fixed;
@@ -19,6 +24,10 @@ body {
     z-index: 10;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
+}
+
+#particles-js { /* CSS personalizado al particles js */
+    /* background-color: #f5f5f5 !important; */
 }
 
 .nav-bar-container {
@@ -42,12 +51,20 @@ body {
     text-align: left;
     color: #ffffffeb;
 }
-.left-section > p {
+.left-section > a {
     font-size: 20px;
     font-style: italic;
     font-weight: 700;
     letter-spacing: -1Q;
     color: #ffffffeb;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.left-section > a:hover {
+    color: #60f2cf;
+    font-weight: 800;
 }
 
 .center-section {
@@ -159,7 +176,7 @@ body {
 
 .overlay-info > h2 {
     margin: 0px 0px 20px 4px;
-    color: #81e6d9;
+    color: #64ffda;
     font-weight: 400;
     font-size: clamp(14px,5vw,20px);
     line-height: 1.1;
@@ -212,7 +229,7 @@ body {
 }
 
 .information .presentation-box {
-    margin: 50px auto 50px auto;
+    margin: 50px auto 0px auto;
     display: flex;
     width: 450px;
     height: auto;
@@ -231,24 +248,24 @@ body {
 .main .my-info {
     margin: auto;
     width: 100vw;
-    /* max-width: 60vw; */
     max-width: 1000px;
+    padding: 50px 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     color: #ffffffeb;
 }
 
-.main .my-info .left-side {
-    width: 50%;
+.my-info .left-side,
+.my-info .right-side {
+    width: 465px;
     height: auto;
-    /* background-color: white; */
     text-align: center;
 }
 
 .left-side .profile {
-    width: 85%;
-    margin: auto;
+    /* width: 85%; */
+    /* margin: auto; */
     display: flex;
 }
 
@@ -267,8 +284,9 @@ body {
 }
 
 .left-side .work {
-    margin: 10px auto;
-    width: 85%;
+    /* margin: 10px auto;
+    width: 85%; */
+    margin-top: 10px;
     line-height: 1.6;
 }
 
@@ -289,12 +307,18 @@ body {
     text-indent: 0;
 }
 
+.article-title > span {
+    /* color: #ff63c3; */
+    color: #dc2167;
+    font-size: 19px;
+}
+
 .profile .profile-pic {
     vertical-align: middle;
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    border: 3px solid #81e6d9;
+    border: 2px solid #ffffffeb;
     margin-top: 30px;
 }
 
@@ -353,25 +377,15 @@ body {
     z-index: 3;
 }
 
-
-
-
-.main .my-info .right-side {
-    width: 50%;
-    height: auto;
-    /* background-color: #a3a3a3; */
-    text-align: center;
-}
-
 .right-side .bio {
-    width: 85%;
-    margin: auto;
+    /* width: 85%;*/
+    margin: auto; 
 }
 
 .bio .bio-year {
     display: flex;
     text-align: left;
-    line-height: 1.6;
+    padding: 1px 0;
 }
 
 .bio-year > span {
@@ -381,9 +395,10 @@ body {
 }
 
 .hobbies {
-    margin: 40px auto;
+    /* width: 85%; */
+    /* margin: 40px auto; */
+    margin-top: 20px;
     line-height: 1.6;
-    width: 85%;
 }
 
 .hobbies > p {
@@ -393,16 +408,16 @@ body {
 }
 
 .main .skills {
-    height: 80vh;
+    height: auto;
     width: 100vw;
-    /* background-color: blue; */
+    padding: 100px 0;
 }
 
 .skills .text-container, .grid-container {
-    width: 100vw;
-    height: 80vh;
-    /* background-color: rgba(255, 166, 0, 0.288); */
-    position: absolute;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    /* position: absolute; */
     display: flex;
 }
 
@@ -424,21 +439,18 @@ body {
 }
 
 
-
 .skills .logos-grid {
     z-index: 1;
     display: inline-grid;
     grid-gap: 10px;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(4, auto);
-    width: 90vw;
-    /* max-width: 50vw; */
-    max-width: 1000px;
+    grid-template-rows: repeat(3, auto);
+    width: 1000px;
+    max-width: 800px;
     font-size: 50px;
     line-height: 80px;
     text-align: center;
     margin: auto;
-
 }
 
 .logos-grid > div {
@@ -451,7 +463,7 @@ body {
 
 .skills-img {
     /* width: 6vw; */
-    width: 120px;
+    width: 90px;
 }
 
 .main .projects {
@@ -514,6 +526,17 @@ body {
     margin: 10px 0;
 }
 
+.project-content .titulo-proyecto-destacado {
+    font-size: clamp(24px, 5vw, 28px);
+    font-weight: 600;
+    line-height: 1.1;
+    transition: all 0.15s ease-in-out;
+}
+
+.project-content .titulo-proyecto-destacado:hover {
+    color: #64ffda;
+}
+
 .project-content > p {
     margin: 10px 0px;
     color: #64ffda;
@@ -521,19 +544,14 @@ body {
     font-weight: 400;
 }
 
-.project-content > h3 {
-    font-size: clamp(24px, 5vw, 28px);
-    font-weight: 600;
-    line-height: 1.1;
-}
-
 .project-content > h3 > a {
     font-size: clamp(24px, 5vw, 28px);
-    color: white;
+    color: #ffffffeb;
     font-weight: 600;
     line-height: 1.1;
     display: inline-block;
     text-decoration: none;
+    
 }
 
 .project-content .project-description {
@@ -547,7 +565,7 @@ body {
 }
 
 .project-content .project-description > p {
-    color: white;
+    color: #ffffffeb;
     font-size: 18px;
 }
 
@@ -563,7 +581,7 @@ body {
 
 .project-tech-list li {
     margin: 0px 20px 5px 0px;
-    color: white;
+    color: #ffffffeb;
     font-size: 13px;
     white-space: nowrap;
 }
@@ -573,13 +591,18 @@ body {
     align-items: center;
     position: relative;
     margin-top: 10px;
-    color: white;
+    color: #ffffffeb;
 }
 
-.project-links > a {
+.project-links .links {
     font-size: 20px;
     vertical-align: middle;
-    color: white;
+    color: #ffffffeb;
+    transition: all 0.15s ease-in-out;
+}
+
+.project-links .links:hover {
+    color: #64ffda;
 }
 
 
@@ -781,7 +804,7 @@ body {
     align-items: center !important;
     justify-content: center !important;
     font-size: 15px;
-    color: white;
+    color: #ffffffeb;
     transition: all 0.4s ease-in-out;
     background-color: transparent !important;  
     
@@ -896,6 +919,7 @@ body {
 	z-index: 100;
 	font-size: 16px;
 	opacity: 0;
+    transition: all .5s ease-in-out;
 }
 
 .form__message {
@@ -918,7 +942,7 @@ body {
 
 .contact-form .submit-btn {
     width: 100%;
-    color: #fff;
+    color: #ffffffeb;
     font-size: 18px;
     margin: 15px auto;
     padding: 10px!important;
@@ -996,8 +1020,23 @@ body {
     display: inline-block;
     text-decoration: none;
     text-decoration-skip-ink: auto;
-    color: #7d88a4;
+    color: #9f9f9f;
     font-size: 15px;
     line-height: 1;
 
 }
+
+/*---------- Scroll reveal classes ----------*/
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal-active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+

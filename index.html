@@ -20,11 +20,13 @@
     <nav class="navigation-bar">
         <div class="nav-bar-container">
             <div class="left-section">
-                <p>Yu Nakasone</p>
+                <a href="#home">Yu Nakasone</a>
             </div>
             <div class="center-section">
-                <a href="">About me</a>
-                <a href="">Skills</a>
+                <a href="#inormation-id">About me</a>
+                <!-- <a href="#skills-id">Skills</a> -->
+                <a href="#projects-id">Projects</a>
+                <a href="#contact-form-id">Contact</a>
                 <a href="">
                     <img src="./assets/images/icons/github-blue.png" alt="">
                     Source
@@ -37,27 +39,25 @@
             </div>
         </div>
     </nav>
-    <banner>
+    <banner id="home">
         <div class="particles-container">
             <div id="particles-js"></div>
             <section class="overlay-info">
                 <h2>Hola,  mi nombre es</h2>     
-                <h1>Tomás Nakasone.</h1>
+                <h1>Tomás Yu Nakasone.</h1>
                 <h3>Desarrollo cosas para la web.</h2>
                 <p>Soy un desarrollador web Full-Stack especializado en construir (y de vez en cuando en diseñar) experiencias digitales. <br> Me gusta <span>explorar, aprender y crear</span> todo tipo de cosas que viven en el internet.</p>
             </section>
         </div>
     </banner>
     <div class="main">
-        <section class="information">
-            <div class="transition-gradient">
-
-            </div>
-            <div class="presentation-box">
+        <section id="inormation-id" class="information">
+            <div class="transition-gradient"></div>
+            <div class="presentation-box reveal">
                 <h3>Hello,  I'm a Full-Stack Developer based in Argentina!</h3>
             </div>
             <div class="my-info">
-                <div class="left-side">
+                <div class="left-side reveal">
                     <div class="profile">
                         <div class="name-description">
                             <h1>Tomás Yu Nakasone</h1>
@@ -79,7 +79,7 @@
                         <a href="#"><span>Portfolio</span></a>
                     </div>
                 </div> 
-                <div class="right-side">
+                <div class="right-side reveal">
                     <div class="bio">
                         <h3 class="article-title">Bio</h3>
                         <div class="bio-year">
@@ -106,16 +106,16 @@
                         </div>
                     </div>
                     <div class="hobbies">
-                        <h3 class="article-title">I ❤</h3>
+                        <h3 class="article-title">I <span>❤</span></h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ullam molestiae sint non vero veritatis exercitationem optio porro voluptas et!</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="skills">
-            <div class="text-container">
+        <section id="skills-id" class="skills reveal">
+            <!-- <div class="text-container">
                 <span class="skills-span">SKILLS</span>
-            </div>
+            </div> -->
             <div class="grid-container">
                 <div class="logos-grid">
                     <div><img class="skills-img" src="./assets/images/skills/html-5.png" alt=""></div>
@@ -137,14 +137,14 @@
             </div>
         </section>
 
-        <section class="projects">
+        <section id="projects-id" class="projects">
             <div class="projects-container">
-                <h2>Algunos proyectos</h2>
+                <h2 class="reveal">Algunos proyectos</h2>
                 <ul class="featured-projects">
-                    <li class="li-project-style">
+                    <li class="li-project-style reveal">
                         <div class="project-content  inverted-content">
                             <p>Proyecto destacado</p>
-                            <h3><a href="#">Aventura Pokemon!</a></h3>
+                            <h3><a href="#" class="titulo-proyecto-destacado">Aventura Pokemon!</a></h3>
                             <div class="project-description">
                                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita corrupti quam omnis voluptate similique magnam! Cupiditate voluptatibus sunt reprehenderit quasi?</p>
                             </div>
@@ -154,7 +154,7 @@
                                 <li> Heap</li>
                             </ul>
                             <div class="project-links inverted-project-links">
-                                <a href="#">
+                                <a href="#" class="links">
                                     <i class="fa-brands fa-github"></i>
                                 </a>
                             </div>
@@ -165,7 +165,7 @@
                             </a>
                         </div>
                     </li>
-                    <li class="li-project-style">
+                    <li class="li-project-style reveal">
                         <div class="project-image">
                             <a href="#">
                                 <div class="pr-image image-one"></div>
@@ -173,7 +173,7 @@
                         </div>
                         <div class="project-content">
                             <p>Proyecto destacado</p>
-                            <h3><a href="#">Analizador de codigo</a></h3>
+                            <h3><a href="#" class="titulo-proyecto-destacado">Analizador de codigo</a></h3>
                             <div class="project-description">
                                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita corrupti quam omnis voluptate similique magnam! Cupiditate voluptatibus sunt reprehenderit quasi?</p>
                             </div>
@@ -181,7 +181,7 @@
                                 <li>Python</li>
                             </ul>
                             <div class="project-links">
-                                <a href="#">
+                                <a href="#" class="links">
                                     <i class="fa-brands fa-github"></i>
                                 </a>
                             </div>
@@ -191,11 +191,11 @@
             </div>
         </section>
 
-        <section class="contact-section">
-            <div class="contact-title">
+        <section id="contact-form-id" class="contact-section">
+            <div class="contact-title reveal">
                 <h2>Contactame</h2>
             </div>
-            <div class="contact-container">
+            <div class="contact-container reveal">
                 <div class="contact-info">
                     <div class="contact-text">
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis quia ut, beatae consectetur nisi, voluptatem nesciunt doloremque officia eius culpa molestias nemo porro cupiditate laboriosam?</p>
@@ -253,7 +253,7 @@
 
                         <div class="form-group" id="group__name">
                             <div class="form__group_input">
-                                <input type="text" name="name" placeholder="Fulanito Fulanes" class="input-style" id="name" required>
+                                <input type="text" name="name" placeholder="Nombre" class="input-style" id="name" autocomplete="off" required>
                                 <i id="i__name" class="formulario__validacion-estado fas fa-times-circle"></i>
                             </div>
                             <p class="formulario__input-error">El nombre no puede estar vacio, contener numeros ni caracteres especiales.</p>
@@ -261,7 +261,7 @@
 
                         <div class="form-group" id="group__email">
                             <div class="form__group_input">
-                                <input type="email" name="email" placeholder="Email" class="input-style" required>
+                                <input type="email" name="email" placeholder="Email" class="input-style" autocomplete="off" required>
                                 <i id="i__email" class="formulario__validacion-estado fas fa-times-circle"></i>
                             </div>
                             <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
@@ -269,7 +269,7 @@
 
                         <div class="form-group" id="group__phone">
                             <div class="form__group_input">
-                                <input type="tel" name="phone" placeholder="N° de telefono" class="input-style" required>
+                                <input type="tel" name="phone" placeholder="N° de telefono" class="input-style" autocomplete="off" required>
                                 <i id="i__phone" class="formulario__validacion-estado fas fa-times-circle"></i>
                             </div>
                             <p class="formulario__input-error">El telefono solo puede contener numeros (sin espacios) y el maximo son 14 dígitos.</p>
@@ -295,20 +295,18 @@
         </section>
         <footer class="footer">
             <div class="credits">
-                <a href="https://github.com/Yuchan45/Portfolio">Designed & Built by Yu Nakasone</a>
+                <a href="https://github.com/Yuchan45/Portfolio">Designed & Built by Tomas Yu Nakasone</a>
             </div>
         </footer>
     </div>
-        
 
-
-    
 
     <script type="text/javascript" src="./assets/particles.js"></script>
     <script type="text/javascript" src="./assets/app.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     
     <script type="text/javascript" src="./assets/scripts.js"></script>
+    <script type="text/javascript" src="./assets/scrollReveal.js"></script>
     <script type="text/javascript" src="./assets/form.js"></script>
 
 </body>
