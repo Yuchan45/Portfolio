@@ -84,11 +84,6 @@ html {
     display: inline-block;
     vertical-align: middle;
 }
-.center-section div a {
-    font-size: 17px;
-    color: #ffffffeb;
-    display: inline-block;
-}
 
 .center-section > a {
     text-decoration: none;
@@ -97,12 +92,6 @@ html {
     position: relative;
     margin: 0 25px 0 25px;
     padding: 5px 0px 5px 0px;
-}
-
-.center-section > a {
-    color: #ffffffeb;
-    position: relative;
-    text-decoration: none;
 }
 
 .center-section > a::before {
@@ -168,8 +157,8 @@ html {
 .menu .hamburger-btn-menu {
     display: inline-block;
     position: relative;
-    width: 25px;
-    height: 24px;
+    width: 30px;
+    height: 25px;
 }
 
 .ham-inner::before {
@@ -238,18 +227,45 @@ html {
     bottom: 0px;
     right: 0px;
     padding: 50px 10px;
-    width: min(75vw, 400px);
+    width: min(40vw, 200px);
     height: 100vh;
-    outline: 0px;
-    background-color: blue;
+    background-color: #111111;
     box-shadow: -10px 0px 30px -15px #020c1bb3;
     z-index: 9;
-    transform: translateX(0vw);
+    opacity: 1;
+    transform: translateX(100vw);
     visibility: visible;
-    transition: all .5s ease-in-out
+    transition: all .25s ease-in-out;
 }
 
 
+.aside-menu.active{
+    transform: translateX(0vw);
+    visibility: visible;
+    transition: all .25s ease-in-out
+}
+
+.aside-menu nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.aside-menu nav a {
+    text-decoration: none;
+    font-size: 17px;
+    color: #ffffffeb;
+    position: relative;
+    margin: 0 25px 0 25px;
+    padding: 25px 0px 25px 0px;
+}
+
+.aside-menu nav a img {
+    width: 17px;
+    margin: -5px 0 0 3px;
+    display: inline-block;
+    vertical-align: middle;
+}
 
 .particles-container {
     height: 75vh;
@@ -1152,7 +1168,7 @@ a .pr-image:hover::after {
     position: relative;
     transform: translateY(150px);
     opacity: 0;
-    transition: all 2s ease;
+    transition: all 1s ease;
 }
 
 .reveal-active {
