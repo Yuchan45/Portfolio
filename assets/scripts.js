@@ -18,6 +18,7 @@ $(document).ready(function(){
     
 });
 
+// Social media interactions
 document.getElementById("social-git").onclick = function () {
     window.open("https://www.github.com", "_blank");
 };
@@ -30,3 +31,35 @@ document.getElementById("social-li").onclick = function () {
 document.getElementById("social-fb").onclick = function () {
     window.open("https://www.facebook.com", "_blank");
 };
+
+
+// Hamburger Menu interactions
+let menuBtn = document.getElementById("ham-menu");
+let hamInner = document.querySelector('.ham-inner');
+let menuOpen = false;
+
+function blurBackground(flag){
+// Recibe como parametro un booleano. Si es true, blurea el fondo. Si es false, lo desblurea.
+    let title = document.querySelector('.overlay-info');
+    let main = document.querySelector('.main');
+    if (flag == true) {
+        title.style.filter = 'blur(2px)';
+        main.style.filter = 'blur(2px)';
+    } else {
+        title.style.filter = 'blur(0px)';
+        main.style.filter = 'blur(0px)';
+    }
+}
+
+
+menuBtn.addEventListener('click', function() {
+    if (!menuOpen) {
+        menuBtn.classList.add('open');
+        blurBackground(true);
+        menuOpen = true;
+    }else {
+        menuBtn.classList.remove('open');
+        blurBackground(false);
+        menuOpen = false;
+    }
+});

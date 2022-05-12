@@ -6,6 +6,12 @@
     font-family: 'Source Sans Pro', sans-serif;
     box-sizing: border-box;
 }
+
+:root {
+
+
+}
+
 body {
     background-color: #202023;
     /* height: 2000px; */
@@ -123,9 +129,12 @@ html {
 .right-section {
     width: 100px;
     text-align: center;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .right-section .night-mode-container {
+    display: none !important;  /* Por ahora para hacer la hamburguesa */
     background-color: #fbd38d;
     margin: auto;
     height: 30px;
@@ -143,6 +152,105 @@ html {
     width: 20px;
 }
 
+.right-section .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    color: inherit;
+    text-transform: none;
+    transition-timing-function: linear;
+    transition-duration: 0.15s;
+    transition-property: opacity, filter;
+}
+
+.menu .hamburger-btn-menu {
+    display: inline-block;
+    position: relative;
+    width: 25px;
+    height: 24px;
+}
+
+.ham-inner::before {
+    content: '';
+    width: 120%;
+    height: 2px;
+    top: -8px;
+    position: relative;
+    display: block;
+    background: green;
+    opacity: 1;
+    transform: rotate(0deg);
+    transition: green;
+    transition: all .25s ease-in-out;
+}
+
+.ham-inner {
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    width: 20px;
+    height: 2px;
+    border-radius: 4px;
+    background-color: green;
+    /* transition: transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0s; */
+    transform: rotate(0deg);
+    transition: all .25s ease-in-out;
+}
+
+.ham-inner::after {
+    content: '';
+    width: 80%;
+    height: 2px;
+    bottom: -8px;
+    position: relative;
+    display: block;
+    background: green;
+    opacity: 1;
+    transform: rotate(0deg);
+    transition: green;
+    transition: all .25s ease-in-out;
+}
+
+/* Ham btn Animation */
+.menu.open .hamburger-btn-menu .ham-inner::before {
+    background: red;
+    width: 100%;
+    transform: translate(2px, 8px);
+}
+.menu.open .hamburger-btn-menu .ham-inner {
+    transform: rotate(225deg);
+    background: transparent;
+}
+.menu.open .hamburger-btn-menu .ham-inner::after {
+    background: red;
+    width: 100%;
+    transform: rotate(90deg) translate(-10px, -2px);
+}
+
+.aside-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    padding: 50px 10px;
+    width: min(75vw, 400px);
+    height: 100vh;
+    outline: 0px;
+    background-color: blue;
+    box-shadow: -10px 0px 30px -15px #020c1bb3;
+    z-index: 9;
+    transform: translateX(0vw);
+    visibility: visible;
+    transition: all .5s ease-in-out
+}
+
+
+
 .particles-container {
     height: 75vh;
     margin:0px;
@@ -156,10 +264,9 @@ html {
 }
 
 .overlay-info {
-    /*width: 50vw;*/
-    width: 750px;
+    width: 100vw;
+    max-width: 1000px;
     height: 45%;
-    /* background-color: #ff000038; */
     position: absolute;
     top: 15%;
     left: 0;
@@ -231,7 +338,7 @@ html {
 .information .presentation-box {
     margin: 50px auto 0px auto;
     display: flex;
-    width: 450px;
+    max-width: 450px;
     height: auto;
     background-color: #313134;
     text-align: center;
@@ -939,10 +1046,14 @@ a .pr-image:hover::after {
 	padding: 0 15px;
 	border-radius: 3px;
 	display: none;
+    opacity: 0;
+    transition: all 5s ease-in-out;
 }
 
 .form__message-active {
 	display: block;
+    opacity: 1;
+    transition: all 5s ease-in-out;
 }
 
 .form__message p {
@@ -1050,3 +1161,11 @@ a .pr-image:hover::after {
 }
 
 
+@media only screen and (max-width: 768px) {
+    .nav-bar-container {
+        width: 100%;
+    }
+    .center-section {
+        display: none;
+    }
+}
