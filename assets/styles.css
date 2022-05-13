@@ -72,7 +72,7 @@ html {
     color: var(--white);
 }
 .left-section > a {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-style: italic;
     font-weight: 700;
     letter-spacing: -1Q;
@@ -101,7 +101,7 @@ html {
 
 .center-section > a {
     text-decoration: none;
-    font-size: 17px;
+    font-size: 1.063rem;
     color: var(--white);
     position: relative;
     margin: 0 25px 0 25px;
@@ -267,7 +267,7 @@ html {
 
 .aside-menu nav a {
     text-decoration: none;
-    font-size: 17px;
+    font-size: 1.063rem;
     color: var(--white);
     position: relative;
     margin: 0 25px 0 25px;
@@ -295,7 +295,7 @@ html {
 
 .overlay-info {
     width: 100vw;
-    max-width: 1000px;
+    max-width: 700px;
     height: 45%;
     position: absolute;
     top: 15%;
@@ -315,13 +315,13 @@ html {
     margin: 0px 0px 20px 4px;
     color: var(--light-cyan);
     font-weight: 400;
-    font-size: clamp(14px,5vw,20px);
+    font-size: clamp(0.9rem,2vw,1.25rem);
     line-height: 1.1;
 }
 
 .overlay-info > h1 {
     margin: 0px;
-    font-size: clamp(40px, 8vw, 70px);
+    font-size: clamp(1.875rem, 4vw, 4.375rem);
     font-weight: 600;
     color: var(--head-title);
     line-height: 1.1;
@@ -331,12 +331,12 @@ html {
     color: var(--head-subtitle);
     line-height: 0.9;
     font-weight: 500;
-    font-size: clamp(40px, 8vw, 60px);
+    font-size: clamp(1.875rem, 4vw, 3.75rem);
 }
 
 .overlay-info > p {
     margin: 20px 0px 0px;
-    font-size: 16px;
+    font-size: 1rem;
     max-width: 500px;
     color: var(--head-text);
     line-height: 1.3;
@@ -371,13 +371,13 @@ html {
     display: flex;
     max-width: 450px;
     height: auto;
-    background-color: var(--bg-gray);
+    background-color: var(--ligth-gray);
     text-align: center;
     border-radius: 0.5em;
 }
 
 .presentation-box > h3 {
-    font-size: 16px;
+    font-size: 1rem;
     vertical-align: middle;
     margin: auto;
     padding: 15px 15px 15px 15px;
@@ -411,7 +411,7 @@ html {
 }
 
 .name-description > span {
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .profile .name-description {
@@ -434,7 +434,7 @@ html {
 .article-title {
     text-align: left;
     margin: 0 auto 15px 0;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 700;
     text-decoration: underline 4px rgb(82, 82, 82);
     text-underline-offset: 6px;
@@ -443,7 +443,7 @@ html {
 
 .article-title > span {
     color: var(--dark-pink);
-    font-size: 19px;
+    font-size: 1.188rem;
 }
 
 .profile .profile-pic {
@@ -469,7 +469,7 @@ html {
     color: var(--light-pink);
     text-decoration: none;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 .my-portfolio a:before {
@@ -522,7 +522,7 @@ html {
 }
 
 .bio-year > span {
-    font-size: 18px;
+    font-size: 1.125rem;
     margin-right: 20px;
     font-weight: bold;
 }
@@ -611,8 +611,32 @@ html {
     padding: 100px 0 0 0;
 }
 
+.projects-container .contact-title {
+    width: 100vw;
+    max-width: 1000px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: auto auto 25px auto;
+}
+
+.projects-container .contact-title > h2 {
+    font-size: clamp(1.625rem,5vw,2rem) !important;
+    color: var(--white);
+}
+
+.projects-container .contact-title::after {
+    content: '';
+    position: relative;
+    margin-left: 20px;
+    display: block;
+    width: 200px;
+    height: 1px;
+    background-color: var(--ligther-gray);
+}
+
 .projects-container > h2 {
-    font-size: clamp(26px,5vw,32px) !important;
+    font-size: clamp(1.625rem,5vw,2rem) !important;
     color: var(--white);
     text-align: left;
     position: relative;
@@ -657,7 +681,7 @@ html {
 }
 
 .project-content .titulo-proyecto-destacado {
-    font-size: clamp(24px, 5vw, 28px);
+    font-size: clamp(1.5rem, 5vw, 1.75rem);
     font-weight: 600;
     line-height: 1.1;
     transition: all 0.15s ease-in-out;
@@ -670,12 +694,12 @@ html {
 .project-content > p {
     margin: 10px 0px;
     color: var(--light-cyan);
-    font-size: var(13px);
+    font-size: 1rem;
     font-weight: 400;
 }
 
 .project-content > h3 > a {
-    font-size: clamp(24px, 5vw, 28px);
+    font-size: clamp(1.5rem, 5vw, 1.75rem);
     color: var(--white);
     font-weight: 600;
     line-height: 1.1;
@@ -697,7 +721,7 @@ html {
 
 .project-content .project-description > p {
     color: var(--white);
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 .project-tech-list {
@@ -713,7 +737,7 @@ html {
 .project-tech-list li {
     margin: 0px 20px 5px 0px;
     color: var(--white);
-    font-size: 13px;
+    font-size: 0.8rem;
     white-space: nowrap;
 }
 
@@ -726,7 +750,7 @@ html {
 }
 
 .project-links .links {
-    font-size: 20px;
+    font-size: 1.25rem;
     vertical-align: middle;
     color: var(--white);
     transition: all 0.15s ease-in-out;
@@ -830,7 +854,7 @@ a .pr-image:hover::after {
 }
 
 .contact-section .contact-title > h2 {
-    font-size: clamp(26px,5vw,32px) !important;
+    font-size: clamp(1.625rem,5vw,2rem) !important;
     color: var(--white);
 }
 
@@ -867,7 +891,7 @@ a .pr-image:hover::after {
     text-align: justify;
     text-indent: 1em;
     line-height: 1.6;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .contact-text .ct-list {
@@ -892,13 +916,13 @@ a .pr-image:hover::after {
     display: flex;
     align-content: space-between;
     gap: 1em;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 18px;
     padding: 10px;
 }
 
 .contact-text .ct-list li p {
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .social-media {
@@ -942,7 +966,7 @@ a .pr-image:hover::after {
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    font-size: 15px;
+    font-size: 0.94rem;
     color: var(--white);
     transition: all 0.4s ease-in-out;
     background-color: transparent !important;  
@@ -1026,7 +1050,7 @@ a .pr-image:hover::after {
     border-color: #444444!important;
     color: #929292!important;
     /* font-size: 1.2em!important; */
-    font-size: 16px;
+    font-size: 1rem;
     height: auto!important;
     transition: .3s ease all;
 }
@@ -1042,7 +1066,7 @@ a .pr-image:hover::after {
 }
 
 .formulario__input-error {
-	font-size: 12px;
+	font-size: 0.75rem;
 	margin-bottom: 0;
 	display: none;
 }
@@ -1056,7 +1080,7 @@ a .pr-image:hover::after {
 	right: 10px;
 	bottom: 15px;
 	z-index: 100;
-	font-size: 16px;
+	font-size: 1rem;
 	opacity: 0;
     transition: all .5s ease-in-out;
 }
@@ -1086,7 +1110,7 @@ a .pr-image:hover::after {
 .contact-form .submit-btn {
     width: 100%;
     color: var(--white);
-    font-size: 18px;
+    font-size: 1.125rem;
     margin: 15px auto;
     padding: 10px!important;
     border-radius: 2px!important;
@@ -1108,7 +1132,7 @@ a .pr-image:hover::after {
 }
 
 .formulario__mensaje-exito {
-	font-size: 14px;
+	font-size: 0.875rem;
 	color: #119200;
 	display: none;
 }
@@ -1164,7 +1188,7 @@ a .pr-image:hover::after {
     text-decoration: none;
     text-decoration-skip-ink: auto;
     color: #9f9f9f;
-    font-size: 15px;
+    font-size: 0.94rem;
     line-height: 1;
 
 }
@@ -1182,12 +1206,93 @@ a .pr-image:hover::after {
     opacity: 1;
 }
 
+/* Media Queries */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 319px) {
+    .left-section > a {
+        color: orange;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+    .left-section > a {
+        color: red;
+    }
+}
+
+@media only screen and (min-width: 480px) and  (max-width: 767px) {
+    .left-section > a {
+        color: green;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px)  {
+    /* .left-section > a {
+        color: cyan;
+    } */
     .nav-bar-container {
         width: 100%;
     }
     .center-section {
         display: none;
+    }
+    .overlay-info {
+        max-width: 500px;
+    }
+    .main .my-info {
+        flex-direction: column;
+    }
+    .projects-container .contact-title {
+        max-width: 500px;
+    }
+    .contact-section .contact-title {
+        max-width: 500px;
+    }
+    .inverted-image {
+        grid-row-start: 1 !important;
+        grid-row-end: -1 !important;
+        grid-column-start: 2 !important;
+        grid-column-end: 12 !important;
+    }
+    .inverted-content {
+        text-align: right !important;
+        grid-row-start: 1 !important;
+        grid-row-end: -1 !important;
+        grid-column-start: 6 !important;
+        grid-column-end: 12 !important;
+    }
+    .li-project-style .project-image {
+        z-index: 0;
+    }
+    .li-project-style .project-content {
+        z-index: 1;
+    }
+    .project-image > a .pr-image {
+        opacity: 0.15;
+    }
+    .li-project-style .project-image {
+        grid-column-start: 2;
+        grid-column-end: 12;
+    }
+    .li-project-style .project-content {
+        grid-column-start: 2;
+        grid-column-end: 8;
+    }
+    .contact-section .contact-container {
+        align-items: center;
+        flex-direction: column;
+    }
+    .contact-container .contact-form-container {
+        margin-top: 50px;
+    }
+
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px)  {
+    .left-section > a {
+        color: blue;
+    }
+    .overlay-info {
+        max-width: 500px;
     }
 }
