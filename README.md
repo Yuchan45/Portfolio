@@ -18,7 +18,7 @@ A su vez, tambien hay estructuras que implementan Grid, como en la seccion de 'P
 En la seccion de 'Contacto' se encuentra un formulario que realiza las correspondientes validaciones a los diferentes campos utilizando expresiones regulares. (No realiza el envio de mails)
 
 
-## Utilizacion de transformaciones y transiciones:
+## Uso de transformaciones y transiciones:
 
 - En los elementos de la barra de navegacion (Hover --> Aplica una transformacion + transicion sobre el ::before) para crear efecto de subrayado. 
 - Boton de 'portfolio' en la seccion de 'Sobre mi' (Hover --> Aplica tranformacion + transicion sobre ::before y ::after).
@@ -29,19 +29,20 @@ En la seccion de 'Contacto' se encuentra un formulario que realiza las correspon
 ## Animaciones con js:
 
 - Scroll Reveal
-- Particles.js (https://vincentgarreau.com/particles.js/)
+- Particles.js  (https://vincentgarreau.com/particles.js/)
 - Botones de 'Follow'
 
 
 ## Fuentes de tipografias:
 
-- Google Fonts: 'Source Sans Pro', sans-serif;
+- Google Fonts: 'Source Sans Pro', sans-serif.
+(https://fonts.google.com/specimen/Source+Sans+Pro?query=source+sans+pro)
 
 
 ## Fuentes de iconos: 
 
-- FontAwesome
-- ionIcons
+- FontAwesome -  (https://fontawesome.com)
+- ionIcons -  (https://ionic.io/ionicons)
 
 
 ## Repositorio:
