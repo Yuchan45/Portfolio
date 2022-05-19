@@ -17,7 +17,7 @@
     <title>Yu Nakasone</title>
 </head>
 <body>
-    <header class="navigation-bar"> <!--ESTO DEBERIA SER LA ETIQUETA 'header'. -->
+    <header class="navigation-bar">
         <div class="nav-bar-container">
             <div class="left-section">
                 <a href="#home">Yu Nakasone</a>
@@ -25,7 +25,6 @@
             <div class="center-section">
                 <nav>
                     <a href="#inormation-id">Sobre mi</a>
-                    <!-- <a href="#skills-id">Skills</a> -->
                     <a href="#projects-id">Proyectos</a>
                     <a href="#contact-form-id">Contacto</a>
                     <a target="_blank" href="https://github.com/Yuchan45">
@@ -46,7 +45,6 @@
                 <aside class="aside-menu">
                     <nav>
                         <a href="#inormation-id">Sobre mi</a>
-                        <!-- <a href="#skills-id">Skills</a> -->
                         <a href="#projects-id">Proyectos</a>
                         <a href="#contact-form-id">Contacto</a>
                         <a target="_blank" href="https://github.com/Yuchan45">
@@ -135,34 +133,8 @@
                 </div>
             </div>
         </section>
-        <!-- <section id="skills-id" class="skills reveal">
-            <div class="text-container">
-                <span class="skills-span">SKILLS</span>
-            </div>
-            <div class="grid-container">
-                <div class="logos-grid">
-                    <div><img class="skills-img" src="./assets/images/skills/html-5.png" alt=""></div>
-                    <div><img class="skills-img" src="./assets/images/skills/css-3.png" alt=""></div>
-                    <div><img class="skills-img" src="./assets/images/skills/js.png" alt=""></div>
-                    <div><img class="skills-img" src="./assets/images/skills/boostrap.png" alt=""></div>
-                    <div><img class="skills-img" src="./assets/images/skills/nodejs.png" alt=""></div>
-                    <div><img class="skills-img" src="./assets/images/skills/atom.png" alt=""></div>
-                    <div><img class="skills-img" src="./assets/images/skills/angular.png" alt=""></div>
-                    <div><img class="skills-img" src="./assets/images/skills/jquery.png" alt=""></div>
-                    <div><img class="skills-img" src="./assets/images/skills/mongodb.png" alt=""></div>
-                    <div><img class="skills-img" src="./assets/images/skills/mySQL.png" alt=""></div>
-                    <div><img class="skills-img" src="./assets/images/skills/microsoft-net.png" alt=""></div>
-                    <div><img class="skills-img" src="./assets/images/skills/icons8-python-480.png" alt=""></div>
-                    <div><img class="skills-img" src="./assets/images/skills/C.png" alt=""></div>
-                    <div><img class="skills-img" src="./assets/images/skills/nasm.png" alt=""></div>
-                    <div><img class="skills-img" src="./assets/images/skills/GitHub-white.png" alt=""></div>
-                </div>
-            </div>
-        </section> -->
-
         <section id="projects-id" class="projects">
             <div class="projects-container">
-                <!-- <h2 class="reveal">Algunos proyectos</h2> -->
                 <div class="contact-title reveal">
                     <h2>Algunos proyectos</h2>
                 </div>
@@ -216,7 +188,6 @@
                 </ul>
             </div>
         </section>
-
         <section id="contact-form-id" class="contact-section">
             <div class="contact-title reveal">
                 <h2>Contactame</h2>
@@ -227,17 +198,14 @@
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis quia ut, beatae consectetur nisi, voluptatem nesciunt doloremque officia eius culpa molestias nemo porro cupiditate laboriosam?</p>
                         <ul class="ct-list">
                             <li>
-                                <!-- <i class="fa-solid fa-location-dot location"></i> -->
                                 <ion-icon name="location-outline"></ion-icon>
                                 <p>Buenos Aires, Argentina</p>
                             </li>
                             <li>
-                                <!-- <i class="fa-brands fa-whatsapp whatsapp"></i> -->
                                 <ion-icon name="logo-whatsapp"></ion-icon>
                                 <p>11 6638 XXXX</p>
                             </li>
                             <li>
-                                <!-- <i class="fa-solid fa-envelope email"></i> -->
                                 <ion-icon name="mail-unread-outline"></ion-icon>
                                 <p>yu.nakasone@gmail.com</p>
                             </li>
@@ -279,7 +247,6 @@
                 </div>
                 <div class="contact-form-container">
                     <form class="contact-form" id="contact-form">
-
                         <div class="form-group" id="group__name">
                             <div class="form__group_input">
                                 <input type="text" name="name" placeholder="Nombre" class="input-style" id="name" autocomplete="off" required>
@@ -307,15 +274,13 @@
                         <div class="form-group" id="group__message">
                             <textarea id="txt-area-msg" name="text" cols="40" rows="5" required placeholder="Mensaje" class="input-style"></textarea>
                             <p id="txtarea-p" class="formulario__input-error">Recuerda dejarme tu mensaje!</p>
-                        </div>
+                        </div>    
 
-
-                        
                         <div class="form-group form__gorup-btn-submit">
                             <button type="submit" class="submit-btn">Enviar!</button>
                             <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
-                        </div>
-                        
+                        </div>   
+
                         <div class="form__message" id="form__message">
                             <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
                         </div>
