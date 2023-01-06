@@ -19,25 +19,10 @@ $(document).ready(function(){
 });
 
 
-// Social media interactions
-document.getElementById("social-git").onclick = function () {
-    window.open("https://www.github.com", "_blank");
-};
-document.getElementById("social-ig").onclick = function () {
-    window.open("https://www.instagram.com", "_blank");
-};
-document.getElementById("social-li").onclick = function () {
-    window.open("https://www.linkedin.com", "_blank");
-};
-document.getElementById("social-fb").onclick = function () {
-    window.open("https://www.facebook.com", "_blank");
-};
-
-
 
 // Hamburger Menu interactions
 const labels = document.querySelectorAll('.aside-menu nav a');
-console.log(labels);
+
 let menuBtn = document.getElementById("ham-menu");
 let hamInner = document.querySelector('.ham-inner');
 let aside = document.querySelector('.aside-menu');
@@ -101,7 +86,7 @@ labels.forEach(function (label) {
 
 
 // Alert, still in development.
-let dayNightBtn = document.querySelector('.night-mode-container');
-dayNightBtn.addEventListener('click', () => {
-    alert("Funcionalidad de modo dia y noche aún en desarrollo!");
-});
+// let dayNightBtn = document.querySelector('.night-mode-container');
+// dayNightBtn.addEventListener('click', () => {
+//     alert("Funcionalidad de modo dia y noche aún en desarrollo!");
+// });

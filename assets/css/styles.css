@@ -10,6 +10,7 @@
     --head-subtitle: #84848c;
     --head-text: #9797a0;
     --light-cyan: #64ffda;
+    --pastel-pink: #FFD1DC;
     --light-pink: #ff63c3;
     --dark-pink: #dc2167;
     --alert-red: #e61132;
@@ -21,6 +22,8 @@
     --github-white: #f0f6fc;
     --instagram-pink: #fb00ff;
     --linkedin-blue: #0089ff;
+    --whatsapp-green: #25D366;
+    --gmail-red: #EA4335;
     --facebook-blue: #4e73cb;
 }
 
@@ -275,6 +278,7 @@ html {
 .particles-container {
     position: relative;
     height: 75vh;
+    max-height: 700px;
     width: 100vw;
     margin: 0px;
     padding: 0px;
@@ -395,6 +399,8 @@ html {
 .left-side .profile {
     display: flex;
     flex-wrap: wrap;
+    gap: 2px;
+    justify-content: center;
 }
 
 .name-description > h1 {
@@ -509,13 +515,21 @@ html {
 .bio .bio-year {
     display: flex;
     text-align: left;
-    padding: 1px 0;
+    padding: 5px 0;
 }
 
 .bio-year > span {
     font-size: 1.125rem;
     margin-right: 20px;
     font-weight: bold;
+}
+
+.bio-year > p {
+    line-height: 1.2;
+}
+
+.bio-year > p > span {
+    color: var(--pastel-pink);
 }
 
 .hobbies {
@@ -527,6 +541,10 @@ html {
     text-align: justify;
     text-indent: 1em;
     line-height: 1.6;
+}
+
+.hobbies > p > span {
+    color: var(--pastel-pink);
 }
 
 .main .skills {
@@ -795,6 +813,11 @@ a .pr-image:hover::after {
     background-image: url(../images/projects/analizador-de-codigo-python.png) !important;
 }
 
+.image-two {
+    background-image: url(../images/projects/shoocity.png) !important;
+    background-position: center;
+}
+
 .inverted-tech-list {
     justify-content: flex-end !important;
 }
@@ -807,7 +830,7 @@ a .pr-image:hover::after {
     justify-content: flex-end !important;
 }
 
-.contact-section {
+/* .contact-section {
     margin-top: 30px;
     width: 100vw;
     height: auto;
@@ -891,7 +914,7 @@ a .pr-image:hover::after {
 .contact-text .ct-list li p {
     font-size: 1rem;
 }
-
+*/
 .social-media {
     margin: auto;
     height: auto;
@@ -908,21 +931,32 @@ a .pr-image:hover::after {
     margin-bottom: 25px;
     position: relative;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
-.social-ul li {
-    display: flex; /*Agregado*/
+.social-ul > a {
     position: relative;
     list-style: none;
     width: 30px;
     height: 30px;
     margin: auto;
-    margin-top: 80px;
+    margin-top: 50px;
+    transition: all 0.5s ease-in-out;
+}
+
+.social-ul > a > li {
+    position: relative;
+    list-style: none;
+    width: 30px;
+    height: 30px;
+    margin: auto;
     transition: all 0.5s ease-in-out;
 }
 
 
-.social-ul li span {
+.social-ul > a > li span {
     margin: auto;
     position: absolute;
     top: 0;
@@ -968,32 +1002,33 @@ a .pr-image:hover::after {
     filter: drop-shadow(0px 0px 10px var(--github-white));
 }
 
-.box > span .fa-instagram {
-    filter: drop-shadow(0px 0px 10px var(--instagram-pink));
-}
-
 .box > span .fa-linkedin-in {
     filter: drop-shadow(0px 0px 10px var(--linkedin-blue));
 }
 
-.box > span .fa-facebook-f {
-    filter: drop-shadow(0px 0px 10px var(--facebook-blue));
+.box > span .fa-whatsapp {
+    filter: drop-shadow(0px 0px 10px var(--whatsapp-green));
+}
+
+.box > span .fa-envelope {
+    filter: drop-shadow(0px 0px 10px var(--gmail-red));
 }
 
 
-.social-ul li:nth-child(1) span {
+.social-ul a > li:nth-child(1) span {
     box-shadow: 0 0 0.1em var(--github-white);
 }
-.social-ul li:nth-child(2) span {
-    box-shadow: 0 0 0.1em var(--instagram-pink);
-}
-.social-ul li:nth-child(3) span {
+.social-ul a > li:nth-child(2) span {
     box-shadow: 0 0 0.1em var(--linkedin-blue);
 }
-.social-ul li:nth-child(4) span {
+.social-ul a > li:nth-child(3) span {
     box-shadow: 0 0 0.1em var(--facebook-blue);
 }
+.social-ul a > li:nth-child(4) span {
+    box-shadow: 0 0 0.1em var(--gmail-red);
+}
 
+/*
 .contact-form-container .contact-form {
     width: auto;
     margin: auto;
@@ -1015,7 +1050,6 @@ a .pr-image:hover::after {
     background: transparent!important;
     border-color: #444444!important;
     color: #929292!important;
-    /* font-size: 1.2em!important; */
     font-size: 1rem;
     height: auto!important;
     transition: .3s ease all;
@@ -1100,8 +1134,10 @@ a .pr-image:hover::after {
 .formulario__mensaje-exito-activo {
 	display: block;
 }
+*/
 
 /* ----- -----  Estilos para Validacion ----- ----- */
+/*
 .formulario__grupo-correcto .formulario__validacion-estado {
 	color: #1ed12d;
 	opacity: 1;
@@ -1119,8 +1155,21 @@ a .pr-image:hover::after {
 .formulario__grupo-incorrecto .formulario__input {
 	border: 3px solid #bb2929;
 }
+*/
 
+.get-in-touch {
+    padding: 30px 10px;
+}
 
+.get-in-touch > h1 {
+    font-size: clamp(1.625rem,5vw,2rem) !important;
+    color: var(--white);
+}
+
+.get-in-touch > p {
+    font-size: .8rem;
+    color: var(--light-cyan);
+}
 
 
 .footer {
@@ -1199,6 +1248,9 @@ a .pr-image:hover::after {
     .main .my-info {
         flex-direction: column;
     }
+    .name-description > h1 {
+        font-size: 2rem;
+    }
     .information .presentation-box {
         max-width: 90vw;
         margin: 5px auto 0px auto;
@@ -1263,6 +1315,8 @@ a .pr-image:hover::after {
     }
     .project-content .project-description {
         padding: 15px;
+        background-color: #1111114d;
+        backdrop-filter: blur(2px);
     }
     .contact-section .contact-title::before {
         width: 70px;
@@ -1323,6 +1377,9 @@ a .pr-image:hover::after {
     .main .my-info {
         flex-direction: column;
     }
+    .name-description > h1 {
+        font-size: 2rem;
+    }
     .information .presentation-box {
         max-width: 280px;
         margin: 5px auto 0px auto;
@@ -1337,10 +1394,11 @@ a .pr-image:hover::after {
         padding: 20px 0 0 0;
     }
     .projects-container .contact-title {
-        max-width: 250px;
+        max-width: 500px;
+        width: 90vw;
     }
     .projects-container .contact-title > h2 {
-        font-size: 1.2rem !important;
+        font-size: 1.5rem !important;
     }
     .projects-container .contact-title::after {
         width: 70px;
@@ -1387,6 +1445,8 @@ a .pr-image:hover::after {
     }
     .project-content .project-description {
         padding: 15px;
+        background-color: #1111114d;
+        backdrop-filter: blur(2px);
     }
     .contact-section .contact-title::before {
         width: 70px;
@@ -1439,10 +1499,12 @@ a .pr-image:hover::after {
         font-size: 0.8rem;
     }
     .my-info .left-side, .my-info .right-side {
-        width: 400px;
+        width: 90vw;
+        max-width: 500px;
     }
     .projects-container .contact-title {
-        max-width: 450px;
+        width: 80vw;
+        max-width: 500px;
     }
     .contact-section .contact-title {
         max-width: 450px;
@@ -1476,6 +1538,11 @@ a .pr-image:hover::after {
     .li-project-style .project-content {
         grid-column-start: 2;
         grid-column-end: 12;
+    }
+    .project-content .project-description {
+        padding: 15px;
+        background-color: #1111114d;
+        backdrop-filter: blur(2px);
     }
     .contact-section .contact-container {
         align-items: center;
