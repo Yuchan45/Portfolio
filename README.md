@@ -15,7 +15,7 @@ Se hace entrega del TP0, se trata de un sitio web de estilo One Page cuya temati
 
 El proyecto cuenta con varias estructuras que implementan flexbox. Los ejemplos mas claros se encuentran en la seccion de informacion del desarrollador, o en la seccion de contactos, aunque este ha sido utilizado en varias ocaciones mas, ya sea para centrar elementos o para cumplir ciertos comportamientos deseados.
 A su vez, tambien hay estructuras que implementan Grid, como en la seccion de 'Proyectos'. Se ha optado por el uso del CSS Grid para obtener la apariencia de "Overlay" entre la descripcion del proyecto y la imagen, asi como para controlar su comportamiento al tomar diferentes medidas de pantalla.
-En la seccion de 'Contacto' se encuentra un formulario que realiza las correspondientes validaciones a los diferentes campos utilizando expresiones regulares. (No realiza el envio de mails)
+En la seccion de 'Contacto' se encuentra un formulario que realiza las correspondientes validaciones a los diferentes campos utilizando expresiones regulares. (No realiza el envio de mails).
 
 
 ## Uso de transformaciones y transiciones:
