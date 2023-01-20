@@ -4,6 +4,9 @@ TP0 Desarrollo Web - HTML, CSS y Javascript
 
 Programa Codo A Codo 4.0: Desarrollo Web FullStack - Python
 
+![image](https://user-images.githubusercontent.com/43625804/213780891-bce18f79-733f-4f23-af83-5d06b1055e39.png)
+
+
 ## Detalles de entrega:
 
 Se hace entrega del TP0, se trata de un sitio web de estilo One Page cuya tematica es 'Portfolio'. La misma es totalemente responsive y cuenta con 4 secciones:
